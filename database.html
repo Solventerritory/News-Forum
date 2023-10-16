@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form with JSON Storage</title>
+
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        /* Style for the success message */
+        #message {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            display: none; /* Hide the message initially */
+        }
+    </style>
 </head>
 <body>
 
@@ -22,6 +46,9 @@
         <input type="submit" value="Submit">
     </form>
 
+    <!-- Display message element -->
+    <div id="message"></div>
+
     <script>
         document.getElementById("myForm").addEventListener("submit", function(event) {
             event.preventDefault(); 
@@ -38,9 +65,13 @@
 
             var jsonData = JSON.stringify(formData);
 
+            // Log the JSON data to the console (you can send it to a server instead)
             console.log(jsonData);
 
-            alert("Submitted successfully!");
+            // Display success message in a styled dialogue box
+            var messageElement = document.getElementById("message");
+            messageElement.innerHTML = "Submitted successfully!";
+            messageElement.style.display = "block"; // Show the message
         });
     </script>
 
