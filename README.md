@@ -10,8 +10,4 @@ Html, css and javascript used for frontend.
 
 Locations are shown using dropdown menu.
 
-Subscribers.json is empty.
 
-Server.js is not working.
-
-Any suggestion  is welcome
