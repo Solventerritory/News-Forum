@@ -24,27 +24,22 @@
 
     <script>
         document.getElementById("myForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevents the default form submission
+            event.preventDefault(); 
 
-            // Get form values
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var age = document.getElementById("age").value;
 
-            // Create a JavaScript object to store the form data
             var formData = {
                 "name": name,
                 "email": email,
                 "age": age
             };
 
-            // Convert the JavaScript object to a JSON string
             var jsonData = JSON.stringify(formData);
 
-            // Log the JSON data to the console (you can send it to a server instead)
             console.log(jsonData);
 
-            // You can add further code here to send the JSON data to a server or perform other actions.
         });
     </script>
 
