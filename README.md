@@ -9,3 +9,7 @@ News logo made using canva.
 Html, css and javascript used for frontend.
 
 Locations are shown using dropdown menu.
+
+Backend is not working properly.
+
+There is mistake while implementing subscribe function
