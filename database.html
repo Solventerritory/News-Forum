@@ -25,7 +25,7 @@
             color: white;
             padding: 10px;
             margin-top: 10px;
-            display: none; /* Hide the message initially */
+            display: none; 
         }
     </style>
 </head>
@@ -65,13 +65,13 @@
 
             var jsonData = JSON.stringify(formData);
 
-            // Log the JSON data to the console (you can send it to a server instead)
+            
             console.log(jsonData);
 
-            // Display success message in a styled dialogue box
+            
             var messageElement = document.getElementById("message");
             messageElement.innerHTML = "Submitted successfully!";
-            messageElement.style.display = "block"; // Show the message
+            messageElement.style.display = "block"; 
         });
     </script>
 
